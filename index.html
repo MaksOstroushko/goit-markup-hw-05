@@ -521,12 +521,12 @@
         <form class="popup-form">
           <div>
             <label class="label-name" for="user-name">Name</label>
-            <div>
+            <div class="popup-form-input">
               <input
                 class="form-input"
                 type="text"
                 id="user-name"
-                name="name"
+                name="user-name"
                 autofocus
               />
               <svg class="form-icon" width="18" height="24">
@@ -536,8 +536,13 @@
           </div>
           <div>
             <label class="label-name" for="user-tel">Phone</label>
-            <div>
-              <input class="form-input" type="tel" id="user-tel" name="phone" />
+            <div class="popup-form-input">
+              <input
+                class="form-input"
+                type="tel"
+                id="user-tel"
+                name="user-phone"
+              />
               <svg class="form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-form-phone"></use>
               </svg>
@@ -545,12 +550,12 @@
           </div>
           <div>
             <label class="label-name" for="user-email">Email</label>
-            <div>
+            <div class="popup-form-input">
               <input
                 class="form-input"
                 type="email"
                 id="user-email"
-                name="email"
+                name="user-email"
               />
               <svg class="form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-form-email"></use>
@@ -558,11 +563,11 @@
             </div>
           </div>
 
-          <div>
+          <div class="popup-form-comment">
             <label class="label-name" for="user-comment">Comment</label>
             <textarea
               class="form-textarea"
-              name="comment"
+              name="user-comment"
               rows=""
               cols=""
               id="user-comment"
@@ -581,7 +586,7 @@
             />
             <label class="user-privacy-label" for="user-privacy"
               >I accept the terms and conditions of the
-              <span>Privacy Policy</span></label
+              <span class="user-privacy-span">Privacy Policy</span></label
             >
           </div>
 

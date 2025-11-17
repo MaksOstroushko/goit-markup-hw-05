@@ -563,9 +563,18 @@ img {
     border-radius: 4px;
     width: 408px;
     height: 80%;
-    max-height: 584px;
+    min-height: 584px;
     position: relative;
     overflow: auto;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 72px 24px 24px 24px;
+
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
 }
 
 .popup-exit-button {
@@ -581,16 +590,17 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     height: 24px;
     width: 24px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .popup-exit-button:hover, 
 .popup-exit-button:focus {
     background-color: #404bbf;
+    border: none;
 }
 
 .popup-exit-icon {
@@ -612,28 +622,26 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    padding-top: 72px;
-    padding-left: 24px;
-    padding-right: 24px;
-    margin-bottom: 16px;
 }
 
 .popup-form {
-    margin-left: 24px;
-    margin-right: 24px;
-    margin-bottom: 16px;
+
 }
 
 .label-name {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.16;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
     display: block;
     margin-top: 8px;
     margin-bottom: 4px;
+}
+
+.popup-form-input {
+    position: relative;
 }
 
 .form-input {
@@ -645,6 +653,7 @@ img {
     padding-left: 38px;
     outline: transparent;
     border-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:hover, 
@@ -654,6 +663,19 @@ img {
 
 .form-icon {
     position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:hover .form-icon,
+.form-input:focus .form-icon {
+    /* fill: #4D5AE5; */
+}
+
+.popup-form-comment {
+    margin-bottom: 16px;
 }
 
 .form-textarea {
@@ -670,6 +692,7 @@ img {
     outline: transparent;
     border-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     resize: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-textarea:hover,
@@ -699,16 +722,26 @@ textarea::placeholder {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.16;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
 }
 
-.user-privacy-label span {
-    line-height: 1.33333;
+.user-privacy-span {
+    color: #4d5ae5;
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     text-decoration: underline;
     text-decoration-skip-ink: none;
-    color: #4d5ae5;
+    /* display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent; */
 }
 
 .submit-button {
