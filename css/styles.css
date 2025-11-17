@@ -622,10 +622,16 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 16px;
 }
 
 .popup-form {
 
+}
+
+.popup-input {
+    margin-bottom: 8px;
+    position: relative;
 }
 
 .label-name {
@@ -638,10 +644,6 @@ img {
     display: block;
     margin-top: 8px;
     margin-bottom: 4px;
-}
-
-.popup-form-input {
-    position: relative;
 }
 
 .form-input {
@@ -671,7 +673,7 @@ img {
 
 .form-input:hover .form-icon,
 .form-input:focus .form-icon {
-    /* fill: #4D5AE5; */
+    fill: #4D5AE5;
 }
 
 .popup-form-comment {
