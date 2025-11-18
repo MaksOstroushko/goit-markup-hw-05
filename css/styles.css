@@ -710,10 +710,6 @@ textarea::placeholder {
     margin-bottom: 24px;
 }
 
-.popup-form .visually-hidden {
-
-}
-
 .user-privacy-label {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -735,8 +731,6 @@ textarea::placeholder {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
     border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
     fill: transparent;
 }
 
@@ -748,10 +742,6 @@ textarea::placeholder {
 
 .privacy-link {
     color: #4d5ae5;
-}
-
-.privacy-icon {
-
 }
 
 .submit-button {
