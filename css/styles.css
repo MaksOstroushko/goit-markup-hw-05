@@ -612,9 +612,6 @@ img {
     top: 0;
     left: 0;
     z-index: 999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -627,9 +624,10 @@ img {
 }
 
 .popup-review {
-    /* position: absolute;
+    position: absolute;
     top: 50%;
-    left: 50%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: #FCFCFC;
     border-radius: 4px;
     width: 408px;
@@ -824,6 +822,7 @@ textarea::placeholder {
     border: none;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-inline: auto;
 
     font-family: "Roboto", sans-serif;
     font-weight: 500;
